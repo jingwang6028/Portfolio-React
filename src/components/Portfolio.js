@@ -42,7 +42,7 @@ function Portfolio() {
           description={portfolio.description}
           github={portfolio.github}
           demo={portfolio.demo}
-          image={process.env.PUBLIC_URL + portfolio.image}
+          image={process.env.PUBLIC_URL + `${portfolio.image}`}
         />
       ))}
     </div>
