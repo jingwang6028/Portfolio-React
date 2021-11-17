@@ -1,6 +1,6 @@
 import React from "react";
 
-function Header() {
+function Header({ currentPage, handlePageChange }) {
   return (
     <header>
       <nav className="navbar navbar-expand-lg fixed-top">
@@ -19,23 +19,47 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#about">
+                <a
+                  href="#about"
+                  onClick={() => handlePageChange("About")}
+                  className={
+                    currentPage === "About" ? "nav-link active" : "nav-link"
+                  }
+                >
                   About Me
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#portfolio">
+                <a
+                  href="#portfolio"
+                  onClick={() => handlePageChange("Portfolio")}
+                  className={
+                    currentPage === "Portfolio" ? "nav-link active" : "nav-link"
+                  }
+                >
                   Portfolio
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contact">
+                <a
+                  href="#contact"
+                  onClick={() => handlePageChange("Contact")}
+                  className={
+                    currentPage === "Contact" ? "nav-link active" : "nav-link"
+                  }
+                >
                   Contact
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  href="#resume"
+                  onClick={() => handlePageChange("Resume")}
+                  className={
+                    currentPage === "Resume" ? "nav-link active" : "nav-link"
+                  }
+                >
+                  Resume
                 </a>
               </li>
             </ul>

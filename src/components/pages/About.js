@@ -14,6 +14,23 @@ function About() {
         With a business degree, major in Accounting, I feel confidence to work
         in a team and work with customers.
       </p>
+      <div>
+        <a href="https://github.com/jingwang6028">
+          <img
+            src={process.env.PUBLIC_URL + "/assets/images/github-logo.png"}
+            alt="github-logo"
+            className="logo"
+          />
+        </a>
+
+        <a href="https://www.linkedin.com/in/jingwang6028/">
+          <img
+            src={process.env.PUBLIC_URL + "/assets/images/linkedin-logo.png"}
+            alt="linkedin-logo"
+            className="logo"
+          />
+        </a>
+      </div>
     </div>
   );
 }
