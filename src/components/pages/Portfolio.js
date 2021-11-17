@@ -33,18 +33,20 @@ const portfolios = [
 
 function Portfolio() {
   return (
-    <div id="portfolio">
-      <h1>Portfolio</h1>
-      {portfolios.map((portfolio) => (
-        <Card
-          key={portfolio.id}
-          title={portfolio.title}
-          description={portfolio.description}
-          github={portfolio.github}
-          demo={portfolio.demo}
-          image={process.env.PUBLIC_URL + `${portfolio.image}`}
-        />
-      ))}
+    <div id="portfolio" className="portfolio">
+      <h1 className="text-center">Portfolio</h1>
+      <div className="portfolio-card">
+        {portfolios.map((portfolio) => (
+          <Card
+            key={portfolio.id}
+            title={portfolio.title}
+            description={portfolio.description}
+            github={portfolio.github}
+            demo={portfolio.demo}
+            image={process.env.PUBLIC_URL + `${portfolio.image}`}
+          />
+        ))}
+      </div>
     </div>
   );
 }

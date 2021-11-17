@@ -3,7 +3,7 @@ import React from "react";
 function Header({ currentPage, handlePageChange }) {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -16,7 +16,11 @@ function Header({ currentPage, handlePageChange }) {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <div
+            className="collapse navbar-collapse custom-nav"
+            id="navbarTogglerDemo01"
+          >
+            <h4 className="my-name">Jing Wang</h4>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a
