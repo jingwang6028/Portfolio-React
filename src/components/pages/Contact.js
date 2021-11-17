@@ -42,8 +42,8 @@ function Contact() {
   return (
     <div id="contact" className="contact">
       <h1>Contact</h1>
-      <form>
-        <div className="mb-3">
+      <form className="contact-form">
+        <div className="mb-3 d-flex flex-column">
           <label for="name" className="form-label">
             name:
           </label>
@@ -52,9 +52,10 @@ function Contact() {
             name="name"
             onChange={handleInputChange}
             type="name"
+            className="form-control"
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-3 d-flex flex-column">
           <label for="email" className="form-label">
             Email address:
           </label>
@@ -63,6 +64,7 @@ function Contact() {
             name="email"
             onChange={handleInputChange}
             type="email"
+            className="form-control"
           />
         </div>
         <div className="mb-3">
@@ -74,12 +76,11 @@ function Contact() {
             name="message"
             onChange={handleInputChange}
             type="text"
-            className="form-control"
+            className="form-control message-box"
             id="message"
-            rows="3"
           ></input>
         </div>
-        <button type="button" onClick={handleFormSubmit}>
+        <button className="btn" type="button" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>

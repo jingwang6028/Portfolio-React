@@ -2,7 +2,7 @@ import React from "react";
 
 function Resume() {
   return (
-    <div id="resume">
+    <div id="resume" className="resume">
       <h1>Resume</h1>
       <div>
         <section>
@@ -22,6 +22,7 @@ function Resume() {
           <ul>
             <li>Node</li>
             <li>Express</li>
+            <li>npm</li>
             <li>MySQL, Sequelize</li>
             <li>MongoDB, Mongoose</li>
             <li>REST APIs</li>

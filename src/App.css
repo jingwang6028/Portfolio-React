@@ -46,13 +46,15 @@ header {
   margin-right: 30px;
 }
 
-a:hover {
+.nav-item a:hover {
   display: inline-block;
   background-color: var(--grey);
 }
 
 /* about-me */
-.about-me h1 {
+.about-me h1,
+.contact h1,
+.resume h1 {
   margin-top: 35px;
   margin-bottom: 35px;
   text-align: center;
@@ -69,15 +71,29 @@ a:hover {
 }
 
 .github-logo,
-.linkedin-logo {
+.linkedin-logo,
+.mail-logo {
   margin-top: 20px;
   width: 50px;
 }
 
 .github-logo {
   margin-left: 40%;
-  margin-right: 6%;
+  margin-right: 3%;
 }
+
+.linkedin-logo {
+  margin-right: 3%;
+}
+
+.mail-logo {
+  background-color: var(--light);
+}
+
+.logo:hover {
+  width: 60px;
+}
+
 /* portfolio */
 .portfolio {
   margin-top: 35px;
@@ -91,6 +107,7 @@ a:hover {
   width: 30%;
   margin: 20px;
   background-color: var(--light);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .card-title {
   font-weight: 800;
@@ -105,7 +122,36 @@ a:hover {
   color: var(--yellow);
 }
 .github-btn {
-  margin-left: 80px;
+  margin-left: 50px;
   margin-right: 15px;
 }
 /* contact */
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.contact-form .btn {
+  background-color: var(--yellow);
+  font-weight: 500;
+}
+
+.contact-form .btn:hover {
+  background-color: var(--sky);
+  color: var(--yellow);
+}
+
+.message-box {
+  height: 150px;
+}
+
+/* resume */
+.resume {
+  width: 50%;
+  margin: 0 auto;
+}

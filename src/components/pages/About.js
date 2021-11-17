@@ -23,7 +23,7 @@ function About() {
           <img
             src={process.env.PUBLIC_URL + "/assets/images/github-logo.png"}
             alt="github-logo"
-            className="github-logo"
+            className="logo github-logo"
           />
         </a>
 
@@ -31,7 +31,14 @@ function About() {
           <img
             src={process.env.PUBLIC_URL + "/assets/images/linkedin-logo.png"}
             alt="linkedin-logo"
-            className="linkedin-logo"
+            className="logo linkedin-logo"
+          />
+        </a>
+        <a href="mailto:jingwang6028@gmail.com">
+          <img
+            src={process.env.PUBLIC_URL + "/assets/images/mail-logo.png"}
+            alt="mail-logo"
+            className="logo mail-logo"
           />
         </a>
       </div>
